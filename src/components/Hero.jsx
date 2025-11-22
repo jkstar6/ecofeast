@@ -29,13 +29,13 @@ export default function Hero() {
       <div className="content">
         <div className="main">
           <div className="curve-four"></div>
-          <h1>Catering Berkelanjutan, <br />Pilihan Fleksibel</h1>
-          <h2>Lebih hemat. Lebih hijau. Lebih cerdas.</h2>
-          <p>
+          <h1 className="fade-left fade-delay-1">Catering Berkelanjutan, <br />Pilihan Fleksibel</h1>
+          <h2 className="fade-left fade-delay-2">Lebih hemat. Lebih hijau. Lebih cerdas.</h2>
+          <p className="fade-left fade-delay-3">
             Satu platform untuk banyak catering, atur menu <br />
             mingguanmu tanpa ribet, tanpa plastik sekali pakai.
           </p>
-          <button className="btn-pesan-sekarang">Pesan Sekarang</button>
+          <button className="btn-pesan-sekarang fade-left fade-delay-4">Pesan Sekarang</button>
         </div>
 
         <div className="side">

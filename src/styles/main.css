@@ -207,6 +207,28 @@ header a {
 .btn-pesan-sekarang:hover {
   background-color: #f19d00;
 }
+/* anim */
+.fade-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  animation: fadeLeft 0.8s ease-out forwards;
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.fade-delay-1 { animation-delay: 0.1s; }
+.fade-delay-2 { animation-delay: 0.2s; }
+.fade-delay-3 { animation-delay: 0.3s; }
+.fade-delay-4 { animation-delay: 0.4s; }
 
 .side {
   margin-top: 10px;
@@ -346,6 +368,19 @@ header a {
   margin-top: 10px;
   margin-bottom: 50px;
   letter-spacing: 1px;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  filter: blur(6px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
 }
 
 /* Container utama dua sisi */
