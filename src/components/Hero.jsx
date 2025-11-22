@@ -1,5 +1,6 @@
 // src/components/Hero.jsx
 import React from "react";
+import "../styles/hero.css";
 import logo from "../assets/logo.png";
 import item1 from "../assets/item1.png";
 import item2 from "../assets/item2.png";

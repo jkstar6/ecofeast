@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import LeftSlider from "./LeftSlider";
 import RightSlider from "./RightSlider";
+import "../styles/whyUs.css";
 
 export default function WhyUs() {
 
