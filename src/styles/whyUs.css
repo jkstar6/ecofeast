@@ -1,5 +1,6 @@
 /* Why Us Section */
 .why-us {
+  color: var(--secondary-color);
   margin: 0 2%;
   margin-top: 100px;
   margin-bottom: 50px;

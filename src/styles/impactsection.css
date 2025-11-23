@@ -1,0 +1,181 @@
+/* WRAPPER */
+.impact-section {
+  width: 100%;
+  padding: 80px 80px;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 50px;
+  box-sizing: border-box;
+}
+
+/* LEFT */
+.impact-left h2 {
+  font-family: Raleway, sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #1d443f;
+  margin-bottom: 20px;
+  max-width: 550px;
+  
+}
+
+.impact-left p {
+  font-size: 20px;
+  line-height: 32px;
+  color: #2e2e2e;
+  max-width: 800px;
+}
+
+/* RIGHT TOP CARD */
+.impact-right-top {
+  position: relative;
+}
+
+/* BUTTON (DIBESARKAN SEDIKIT) */
+.impact-btn {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  
+  padding: 10px 26px;         /* 🔥 LEBIH BESAR */
+  border-radius: 18px;        /* 🔥 LEBIH BAGUS */
+  background: white;
+  border: 2px solid #21504E;
+  
+  color: #21504E;
+  font-family: Raleway;
+  font-weight: 700;           /* 🔥 lebih tebal */
+  font-size: 17px;            /* 🔥 sedikit lebih besar */
+  z-index: 5;
+}
+
+/* CARD BASE */
+.impact-card {
+  position: relative;
+  border-radius: 26px;
+  overflow: hidden;
+  color: white;
+  padding: 24px;
+}
+
+/* MATIKAN OVERLAY */
+.impact-card .overlay {
+  display: none;
+}
+
+/* CONTENT POSITIONING */
+.impact-card * {
+  position: relative;
+  z-index: 2;
+}
+
+/* SMALL PLASTIC CARD (KANAN ATAS) */
+.impact-card.small.plastic {
+  height: 240px;
+  background-image: url("../assets/Maskgroup.png");
+  background-size: cover;
+  background-position: center;
+  padding: 26px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* CIRCLE +3 (DIPERBAIKI SUPAYA BULAT) */
+.impact-card.small.plastic .impact-circle {
+  width: 70px;               /* 🔥 tambahin sedikit */
+  height: 70px;              /* 🔥 supaya bulat lagi */
+  font-size: 25px;
+  font-weight: 800;
+
+  background: rgba(230, 255, 197, 0.9);
+  border-radius: 50%;        /* 🔥 memastikan tetap bulat */
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #21504E;
+
+  margin-bottom: 12px;
+  margin-top: 75px;          /* 🔥 diturunkan sedikit */
+}
+
+/* TEXT INSIDE CARD */
+.impact-card p {
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 0;
+  color: white;
+}
+
+.impact-card p strong {
+  font-size: 24px;
+  color: #E6FFC5 !important;
+}
+
+/* BOTTOM GRID */
+.impact-bottom {
+  grid-column: 1 / 3;
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+/* BIG CARD */
+.impact-card.big {
+  height: 260px;
+  background-image: url("../assets/image11.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.impact-number {
+  font-size: 110px;
+  font-weight: 800;
+  color: #E6FFC5 !important;
+  margin-bottom: 10px;
+}
+
+.impact-desc strong {
+  font-size: 40px !important;
+  color: #E6FFC5 !important;
+}
+
+
+/* SMALL IMAGE CARD (81%) */
+.impact-card.small.img {
+  height: 260px;
+  background-image: url("../assets/image12.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 28px;
+}
+
+/* Circle 81% */
+.impact-card.small.img .impact-circle.small {
+  width: 100px;
+  height: 100px;
+  font-size: 32px;
+  font-weight: 800;
+  background: rgba(230, 255, 197, 0.9);
+  color: #21504E;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Teks kanan dari 81% */
+.impact-card.small.img p {
+  max-width: 160px;
+  text-align: left;
+}
+
+

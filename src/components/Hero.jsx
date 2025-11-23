@@ -10,6 +10,8 @@ import image from "../assets/image.png";
 export default function Hero() {
   return (
     <div className="hero" style={{ backgroundImage: `url(${image})` }}>
+          <div className="curve-four"></div>
+
       <header>
         <img src={logo} alt="logo" />
         <div className="curve-one"></div>
@@ -29,7 +31,6 @@ export default function Hero() {
 
       <div className="content">
         <div className="main">
-          <div className="curve-four"></div>
           <h1 className="fade-left fade-delay-1">Catering Berkelanjutan, <br />Pilihan Fleksibel</h1>
           <h2 className="fade-left fade-delay-2">Lebih hemat. Lebih hijau. Lebih cerdas.</h2>
           <p className="fade-left fade-delay-3">
