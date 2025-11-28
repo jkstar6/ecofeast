@@ -1,15 +1,22 @@
-/* Base container */
+/* ============================
+   SECTION LAYOUT
+============================ */
 .package-section {
   width: 100%;
   padding: 4rem 1.5rem;
+
+  /* ✨ bikin section memenuhi layar */
+  min-height: 100vh;
+
+  /* ✨ center vertikal + horizontal */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+
   text-align: center;
-  box-sizing: border-box;
 }
 
-/* Title */
 .package-title {
   font-size: 34px;
   font-weight: 700;
@@ -20,11 +27,13 @@
 .package-subtitle {
   color: #555;
   margin-bottom: 48px;
-  max-width: 600px;
   font-size: 15px;
+  max-width: 650px;
 }
 
-/* Grid layout */
+/* ============================
+   GRID
+============================ */
 .package-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -40,72 +49,72 @@
 }
 
 /* ============================
-      CARD STYLING
+   CARD (REGULER + ADVANCE)
 ============================ */
-
-/* Default card (Reguler & Advance) */
 .package-card {
-  border: 2px solid #dcdcdc;
+  border: 1px solid #d9d9d9;
   border-radius: 24px;
   padding: 36px 32px 50px;
-
-  background-image: url("../assets/Subtract-1.png");
-  background-size: cover;
-  background-position: center;
+  background: #ffffff;
 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;          /* ⬅️ konten card ke tengah */
-  text-align: center;           /* ⬅️ judul, harga, tombol ke tengah */
 
-  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-  color: #1a1a1a;
+  /* background dekor */
+  background-image: url("../assets/Subtract-rect.png");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-/* Premium — Recommended */
+/* ============================
+   PREMIUM (TENGAH)
+============================ */
 .package-card.recommended {
+  border: none;
+
+  /* lebih besar */
+  transform: scale(1.05);
+
+  /* background khusus */
   background-image: url("../assets/Subtract.png");
   background-size: cover;
   background-position: center;
 
-  transform: scale(1.06);
-  border: none;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-
-  color: #ffffff;
+  color: white;
   position: relative;
 }
 
-/* Recommended tag */
-.package-card .tag {
+/* Tag Recommended */
+.package-card.recommended .tag {
   position: absolute;
-  top: -16px;
+  top: -14px;
   left: 50%;
   transform: translateX(-50%);
   background: #1c7c2b;
-  color: white;
   padding: 6px 20px;
   border-radius: 999px;
   font-size: 13px;
   font-weight: 700;
+  color: white;
 }
 
-/* Card title */
+/* ============================
+   TEXT STYLE
+============================ */
 .card-title {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 4px;
 }
 
-/* Subdesc */
 .card-desc {
-  color: inherit;
-  opacity: 0.85;
+  font-size: 14px;
+  opacity: 0.8;
   margin-bottom: 18px;
 }
 
-/* Price style */
 .card-price {
   font-size: 36px;
   font-weight: 800;
@@ -119,43 +128,43 @@
 
 .card-price span {
   font-size: 18px;
-  font-weight: 500;
+  margin-left: 4px;
 }
 
-/* List – tetap kiri tetapi diblok tengah */
+/* ============================
+   FEATURE LIST
+============================ */
 .card-list {
   text-align: left;
-  width: 90%;               /* ⬅️ supaya tidak mepet kiri */
-  max-width: 260px;         /* ⬅️ biar proporsional seperti desain */
-  margin-left: auto;        /* ⬅️ memusatkan list */
-  margin-right: auto;
-  margin-bottom: 24px;
+  width: 100%;
+  max-width: 260px;
+  margin: 0 auto 24px;
   padding-left: 0;
 }
 
 .card-list li {
-  font-size: 14px;
-  margin-bottom: 10px;
   list-style: none;
-  color: inherit;
+  margin-bottom: 10px;
+  font-size: 14px;
   opacity: 0.9;
 }
 
 .card-list li::before {
   content: "•";
   margin-right: 8px;
-  font-size: 18px;
-  line-height: 1;
+  font-size: 16px;
   color: currentColor;
 }
 
-/* Button */
+/* ============================
+   BUTTONS
+============================ */
 .package-btn {
   width: 100%;
   padding: 12px 0;
   border-radius: 14px;
-  border: 1px solid #aaa;
-  background: #fff;
+  border: 1px solid #333;
+  background: white;
   color: #1a1a1a;
   font-weight: 600;
   cursor: pointer;
@@ -163,7 +172,7 @@
 }
 
 .package-btn:hover {
-  background: #eaeaea;
+  background: #efefef;
 }
 
 .package-btn.primary {
@@ -176,7 +185,6 @@
   background: #1f6c22;
 }
 
-/* Premium button special */
 .package-card.recommended .package-btn.primary {
   background: #30a035;
 }

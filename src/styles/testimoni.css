@@ -1,0 +1,149 @@
+/* ==========================
+   TESTIMONI SECTION
+   ========================== */
+.testi-container {
+  margin: 60px auto;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.testi-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1e3a1b;
+  margin-bottom: 40px;
+  line-height: 1.4;
+  text-align: center;
+  width: 100%;
+}
+
+/* Wrapper */
+.testi-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Slider container */
+.testi-slider {
+  width: 100%;
+  max-width: 1000px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Track isi kartu */
+.testi-track {
+  display: flex;
+  gap: 40px;
+  padding: 10px;
+  width: max-content;
+  animation: slideTesti 12s infinite ease-in-out;
+  justify-content: center;
+}
+
+/* Card */
+.testi-card {
+  background: #f4f8f3;
+  padding: 28px;
+  border-radius: 16px;
+  min-width: 460px;
+  max-width: 460px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+/* Avatar */
+.avatar,
+.testi-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;        /* <-- bikin bulat */
+  object-fit: cover;         /* biar proporsional */
+  display: block;
+  margin: 0 auto 16px auto;  /* tengah dan beri jarak bawah */
+  border: 3px solid #cfe3c8; /* garis hijau muda biar elegan */
+  background-color: #fff;
+}
+
+.testi-card h3 {
+  color: #274e13;
+  font-size: 20px;
+  margin-bottom: 8px;
+  text-align: center; /* nama di tengah bawah avatar */
+}
+
+.stars {
+  font-size: 20px;
+  color: #f4b400;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.testi-text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.tag {
+  background: #d9e8d3;
+  color: #274e13;
+  padding: 4px 10px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* Animasi slider otomatis (2 card) */
+@keyframes slideTesti {
+  0%, 40% {
+    transform: translateX(0);
+  }
+  50%, 90% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Responsif Mobile */
+@media (max-width: 700px) {
+  .testi-slider {
+    width: 100%;
+    max-width: 90%;
+  }
+
+  .testi-card {
+    min-width: 300px;
+  }
+
+  .testi-title {
+    font-size: 28px;
+  }
+
+  @keyframes slideTesti {
+    0%, 40% {
+      transform: translateX(0);
+    }
+    50%, 90% {
+      transform: translateX(-320px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
