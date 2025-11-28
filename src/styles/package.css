@@ -2,7 +2,7 @@
    SECTION LAYOUT
 ============================ */
 .package-section {
-  width: 100%;
+  /* width: 100%; */
   padding: 4rem 1.5rem;
 
   /* ✨ bikin section memenuhi layar */
