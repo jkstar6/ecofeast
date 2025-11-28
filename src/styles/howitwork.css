@@ -11,10 +11,10 @@ body {
 
 /* 🔹 Container utama */
 .how-it-works {
-  padding: 120px 120px;
+  padding: 150px 150px; /* diperbesar */
   width: 100%;
   margin: auto;
-  max-width: 1500px;
+  max-width: 1800px; /* diperbesar */
   text-align: center;
   opacity: 0;
   transform: translateY(40px);
@@ -22,7 +22,6 @@ body {
   box-sizing: border-box;
 }
 
-/* ✨ Animasi muncul utama */
 @keyframes fadeUp {
   from {
     opacity: 0;
@@ -35,53 +34,51 @@ body {
 }
 
 .how-it-works h2 {
-  font-size: 32px;
+  font-size: 42px;  /* diperbesar */
   color: #1e3a1b;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   font-weight: 700;
   letter-spacing: 0.3px;
 }
 
 .how-it-works p {
   color: #555;
-  margin-bottom: 50px;
-  font-size: 16px;
+  margin-bottom: 60px; /* diperbesar */
+  font-size: 20px; /* diperbesar */
   font-weight: 400;
 }
 
-/* 🔹 Tetap 4 kolom sejajar dalam 1 baris */
+/* 🔹 4 kolom diperbesar spacingnya */
 .steps {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 3cm;
+  gap: 4cm;  /* diperbesar */
   justify-content: center;
   align-items: stretch;
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px; /* diperbesar */
   margin: 0 auto;
 }
 
-/* 🔹 Kartu seragam dan sejajar */
+/* 🔹 Kartu */
 .card {
   background-color: #f4f8f3;
-  border-radius: 16px;
-  padding: 34px 26px;
+  border-radius: 20px; /* sedikit diperbesar */
+  padding: 45px 34px; /* diperbesar */
   width: 100%;
-  max-width: 270px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+  max-width: 330px; /* diperbesar */
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.08);
   transition: all 0.7s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 
-  /* ✨ animasi muncul */
   opacity: 0;
   transform: translateY(50px);
   animation: fadeUpCard 0.8s ease forwards;
 }
 
-/* ✨ animasi muncul berurutan */
 .card:nth-child(1) { animation-delay: 0.3s; }
 .card:nth-child(2) { animation-delay: 0.5s; }
 .card:nth-child(3) { animation-delay: 0.7s; }
@@ -98,16 +95,15 @@ body {
   }
 }
 
-/* Hover halus */
 .card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+  transform: translateY(-8px);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.12);
 }
 
 /* 🔹 Nomor langkah */
 .step-number {
-  width: 34px;
-  height: 34px;
+  width: 44px;   /* diperbesar */
+  height: 44px;  /* diperbesar */
   background-color: #274e13;
   color: #ffffff;
   font-weight: 600;
@@ -115,38 +111,38 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 14px auto;
-  font-size: 14px;
+  margin: 0 auto 18px auto;
+  font-size: 18px; /* diperbesar */
 }
 
-/* 🔹 Ikon proporsional */
+/* 🔹 Ikon */
 .icon img {
-  width: 60px;
-  height: 60px;
+  width: 75px;   /* diperbesar */
+  height: 75px;  /* diperbesar */
   object-fit: contain;
-  margin-bottom: 14px;
+  margin-bottom: 18px;
   filter: brightness(0) saturate(100%) invert(21%) sepia(68%) saturate(332%) hue-rotate(79deg) brightness(93%) contrast(92%);
 }
 
 .card h3 {
-  font-size: 17px;
+  font-size: 20px; /* diperbesar */
   color: #274e13;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   font-weight: 600;
 }
 
 .card p {
-  font-size: 14px;
+  font-size: 16px; /* diperbesar */
   color: #555;
-  line-height: 1.6;
+  line-height: 1.7;
   text-align: center;
 }
 
 /* 🔹 Timeline */
 .timeline {
   position: relative;
-  margin-top: 60px;
-  height: 20px;
+  margin-top: 80px; /* diperbesar */
+  height: 26px;     /* diperbesar */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -161,7 +157,7 @@ body {
   top: 50%;
   left: 5%;
   right: 5%;
-  height: 3px;
+  height: 5px; /* diperbesar */
   background-color: #274e13;
   border-radius: 2px;
   transform: translateY(-50%);
@@ -169,28 +165,28 @@ body {
 
 .dot {
   z-index: 2;
-  width: 18px;
-  height: 18px;
+  width: 24px;  /* diperbesar */
+  height: 24px; /* diperbesar */
   background-color: #ffffff;
-  border: 4px solid #274e13;
+  border: 5px solid #274e13;
   border-radius: 50%;
   display: inline-block;
-  margin: 0 90px;
+  margin: 0 110px; /* diperbesar */
 }
 
 /* 🔹 Responsif */
 @media (max-width: 1100px) {
   .how-it-works {
-    width: 94%;
-    padding: 60px 30px;
+    width: 95%;
+    padding: 70px 30px;
   }
 
   .card {
-    max-width: 250px;
+    max-width: 300px;
   }
 
   .dot {
-    margin: 0 60px;
+    margin: 0 70px;
   }
 }
 
@@ -200,10 +196,10 @@ body {
   }
 
   .card {
-    max-width: 85%;
+    max-width: 90%;
   }
 
   .dot {
-    margin: 0 25px;
+    margin: 0 30px;
   }
 }
