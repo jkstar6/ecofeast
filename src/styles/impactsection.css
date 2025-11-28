@@ -11,8 +11,8 @@
 /* LEFT */
 .impact-left h2 {
   font-family: Raleway, sans-serif;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: clamp(2.0rem, 2.5vw + 0.5rem, 3rem);
+  font-weight: 600;
   color: #1d443f;
   margin-bottom: 20px;
   max-width: 550px;
@@ -20,7 +20,8 @@
 }
 
 .impact-left p {
-  font-size: 20px;
+  font-size: clamp(0.8rem, 1.1vw + 0.5rem, 1.4rem);
+  font-weight: 500;
   line-height: 32px;
   color: #2e2e2e;
   max-width: 800px;
@@ -38,15 +39,15 @@
   left: 50%;
   transform: translateX(-50%);
   
-  padding: 10px 26px;         /* 🔥 LEBIH BESAR */
-  border-radius: 18px;        /* 🔥 LEBIH BAGUS */
+  padding: 14px 0px;         /* 🔥 LEBIH BESAR */
+  border-radius: 14px;        /* 🔥 LEBIH BAGUS */
   background: white;
   border: 2px solid #21504E;
-  
+  width: 200px;
   color: #21504E;
   font-family: Raleway;
-  font-weight: 700;           /* 🔥 lebih tebal */
-  font-size: 17px;            /* 🔥 sedikit lebih besar */
+  font-size: clamp(0.7rem, 1vw + 0.5rem, 1.3rem);
+  font-weight: 600;
   z-index: 5;
 }
 
@@ -147,7 +148,7 @@
 
 /* SMALL IMAGE CARD (81%) */
 .impact-card.small.img {
-  height: 260px;
+  height: 255px;
   background-image: url("../assets/image12.png");
   background-size: cover;
   background-position: center;
