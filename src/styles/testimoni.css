@@ -150,12 +150,12 @@
 
 .tag {
   text-align: center;
-  background: #d9e8d3;
-  color: #274e13;
+  background: #B1D18A;
+  color: #1C3200;
   padding: 4px 10px;
   border-radius: 8px;
   font-size: 11px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* ===== Responsive ===== */

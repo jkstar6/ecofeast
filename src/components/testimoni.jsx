@@ -25,7 +25,7 @@ const testimonials = [
   {
     name: "Doni – Freelancer",
     avatar: avatarDoni,
-    stars: 5,
+    stars: 4,
     text: "Suka banget sistem adaptifnya! Bisa ganti jadwal kapan aja, cocok buat yang jam kerjanya nggak menentu. Sekalian bantu hidup mindful juga.",
     tags: ["adaptif", "mindful eating"]
   },
