@@ -7,6 +7,7 @@ import ImpactSection from "./components/impactsection.jsx";
 import PackageSection from "./components/package.jsx";
 import TestimoniSection from "./components/testimoni.jsx";
 import CTASection from "./components/CTASection.jsx";
+import Footer from "./components/Footer.jsx";
 
 export default function App() {
   return (
@@ -18,6 +19,7 @@ export default function App() {
       <PackageSection />
       <TestimoniSection />
       <CTASection />
+      <Footer />
     </>
   );
 }
