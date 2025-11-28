@@ -2,11 +2,11 @@
    TESTIMONI SECTION
    ========================== */
 .testi-container {
-  margin: 60px auto;
+  /* margin: 60px auto; */
   text-align: center;
   font-family: "Inter", sans-serif;
-  max-width: 1200px;
-  padding: 0 20px;
+  max-width: 99vw;
+  /* padding: 0 20px; */
 }
 
 .testi-title {
@@ -19,131 +19,161 @@
   width: 100%;
 }
 
-/* Wrapper */
-.testi-wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Slider container */
+/* Slider viewport (yang tidak bergerak, hanya memotong area tampilan) */
 .testi-slider {
-  width: 100%;
-  max-width: 1000px;
-  overflow: hidden;
+  width: 100%;       /* full layar */
   position: relative;
-  margin: 0 auto;
+  overflow: hidden;
+
+  /* Hilangkan scrollbar */
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.testi-slider::-webkit-scrollbar {
+  display: none;
 }
 
-/* Track isi kartu */
+.testi-slider.is-grabbing {
+  cursor: grabbing;
+}
+
+/* Track — ini yang digeser */
 .testi-track {
   display: flex;
   gap: 40px;
   padding: 10px;
-  width: max-content;
-  animation: slideTesti 12s infinite ease-in-out;
-  justify-content: center;
+  width: max-content;         /* kunci: biar memanjang sesuai kartu */
+  will-change: transform;     /* sedikit optimasi */
+  transition: none;
 }
 
-/* Card */
+/* Kartu testimoni */
 .testi-card {
-  background: #f4f8f3;
-  padding: 28px;
+  display: flex;
+  position: relative;
+  background: #F1F2E6;
+  padding: 25px 18px;
   border-radius: 16px;
-  min-width: 460px;
-  max-width: 460px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  min-width: 420px;
+  max-width: 420px;
+  height: 165px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.12);
   text-align: left;
+  user-select: none;
 }
 
 /* Avatar */
-.avatar,
 .testi-avatar {
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 80px;
   height: 80px;
-  border-radius: 50%;        /* <-- bikin bulat */
-  object-fit: cover;         /* biar proporsional */
-  display: block;
-  margin: 0 auto 16px auto;  /* tengah dan beri jarak bawah */
-  border: 3px solid #cfe3c8; /* garis hijau muda biar elegan */
-  background-color: #fff;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 16px auto;
+  border: 3px solid #FFFF;
+  box-shadow: 0 0 0 10px var(--primary-color);
 }
 
-.testi-card h3 {
+.testi-content {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+}
+
+.testi-content::before,
+.testi-content::after {
+  width: 20px;
+  height: 20px;
+  content: "";
+  position: absolute;
+}
+
+.testi-content::before {
+  /* background-color: red; */
+  top: 0;
+  left: 83px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 19px;
+  box-shadow: -10px -4px var(--primary-color);
+}
+
+.testi-content::after {
+  /* background-color: red; */
+  top: 83px;
+  left: 0;
+  border-top-right-radius: 19px;
+  border-top-left-radius: 10px;
+  box-shadow: -4px -10px var(--primary-color);
+}
+
+.testi-item {
+  width: 90%;
+}
+
+.testi-item h3 {
   color: #274e13;
   font-size: 20px;
-  margin-bottom: 8px;
-  text-align: center; /* nama di tengah bawah avatar */
 }
 
 .stars {
-  font-size: 20px;
+  font-size: 30px;
   color: #f4b400;
-  margin-bottom: 12px;
-  text-align: center;
+  margin-bottom: 5px;
 }
 
 .testi-text {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.6;
   color: #555;
   margin-bottom: 20px;
 }
 
+.highlight {
+  padding-top: 90px;
+  width: 160px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #1e3a1b;
+  text-align: center;
+}
+
 .tags {
   display: flex;
+  flex-direction: column;
   gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .tag {
+  text-align: center;
   background: #d9e8d3;
   color: #274e13;
   padding: 4px 10px;
   border-radius: 8px;
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 600;
 }
 
-/* Animasi slider otomatis (2 card) */
-@keyframes slideTesti {
-  0%, 40% {
-    transform: translateX(0);
-  }
-  50%, 90% {
-    transform: translateX(-500px);
-  }
-  100% {
-    transform: translateX(0);
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .testi-card {
+    min-width: 360px;
+    max-width: 360px;
   }
 }
 
-/* Responsif Mobile */
 @media (max-width: 700px) {
-  .testi-slider {
-    width: 100%;
-    max-width: 90%;
-  }
-
-  .testi-card {
-    min-width: 300px;
-  }
-
   .testi-title {
     font-size: 28px;
   }
 
-  @keyframes slideTesti {
-    0%, 40% {
-      transform: translateX(0);
-    }
-    50%, 90% {
-      transform: translateX(-320px);
-    }
-    100% {
-      transform: translateX(0);
-    }
+  .testi-card {
+    min-width: 300px;
+    max-width: 300px;
+    padding: 20px;
   }
 }
