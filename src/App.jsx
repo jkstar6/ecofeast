@@ -6,6 +6,7 @@ import HowItWork from "./components/howitwork.jsx";
 import ImpactSection from "./components/impactsection.jsx";
 import PackageSection from "./components/package.jsx";
 import TestimoniSection from "./components/testimoni.jsx";
+import CTASection from "./components/CTASection.jsx";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <ImpactSection />
       <PackageSection />
       <TestimoniSection />
+      <CTASection />
     </>
   );
 }

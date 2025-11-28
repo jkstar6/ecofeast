@@ -1,0 +1,88 @@
+.cta-section {
+  margin: 6vw 6vw;
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+}
+
+.cta {
+  padding: 45px;
+  background-color: #21504e;
+  width: 50%;
+  border-radius: 40px;
+  position: relative;
+}
+
+.container-cta {
+  position: relative;
+  height: 55vh;
+}
+
+.container-cta h2 {
+  color: var(--primary-color);
+  font-family: "Instrument Sans", sans-serif;
+  font-size: clamp(2rem, 2.7vw + 0.5rem, 3.5rem);
+  font-weight: 400;
+  width: 80%;
+}
+
+.pilih {
+  width: 60%;
+  position: absolute;
+  right: -50px;
+  bottom: -15px;
+}
+
+.gabung {
+  width: 35%;
+  position: absolute;
+  right: 0px;
+  bottom: 25px;
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 20px 0 0;
+  border-top-right-radius: 40px;
+}
+
+.cta-button button {
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(1rem, 1.2vw + 0.5rem, 2rem);
+  font-weight: 500;
+  background-color: #fbb026;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  padding: 5px 20px 5px 30px;
+  border-radius: 30px;
+}
+
+.cta-button button img {
+  width: 70px;
+}
+
+.cta-button::before,
+.cta-button::after {
+  width: 50px;
+  height: 50px;
+  content: "";
+  position: absolute;
+}
+
+.cta-button::before {
+  top: -50px;
+  border-bottom-left-radius: 40px;
+  box-shadow: -12px 12px var(--primary-color);
+}
+
+.cta-button::after {
+  bottom: 0;
+  right: -50px;
+  border-bottom-left-radius: 40px;
+  box-shadow: -12px 12px var(--primary-color);
+}
