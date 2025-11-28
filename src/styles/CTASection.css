@@ -21,7 +21,7 @@
 .container-cta h2 {
   color: var(--primary-color);
   font-family: "Instrument Sans", sans-serif;
-  font-size: clamp(2rem, 2.7vw + 0.5rem, 3.5rem);
+  font-size: clamp(2rem, 2.5vw + 0.5rem, 3.2rem);
   font-weight: 400;
   width: 80%;
 }
