@@ -46,7 +46,7 @@ export default function Hero() {
             <div className="item-content">
               <p>
                 Rencanakan<br />
-                <span className="highlight">Menu Mingguan-Mu</span> Sekarang!
+                <span className="high">Menu Mingguan-Mu</span> Sekarang!
               </p>
             </div>
             <button className="item-button">
@@ -60,7 +60,7 @@ export default function Hero() {
             <img className="item-image" src={item2} alt="" />
             <div className="item-content">
               <p>
-                Lihat <span className="highlight">Cuplikan Menu</span> Minggu Ini
+                Lihat <span className="high">Cuplikan Menu</span> Minggu Ini
               </p>
             </div>
             <button className="item-button">
