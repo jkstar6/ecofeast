@@ -64,7 +64,7 @@ body {
 .card {
   background-color: #f4f8f3;
   border-radius: 20px; /* sedikit diperbesar */
-  padding: 45px 34px; /* diperbesar */
+  padding: 45px 34px 0px 34px; /* diperbesar */
   width: 100%;
   max-width: 330px; /* diperbesar */
   box-shadow: 0 5px 14px rgba(0, 0, 0, 0.08);
