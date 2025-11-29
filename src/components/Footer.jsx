@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Footer.css";
+import "../styles/footer.css";
 import logo from "../assets/logo-ecofeast-3.png";
 
 export default function Footer() {
